@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sublime Recognition: Human vs AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decontextualizing Language Through AI</h1>
+        <p class="subtitle">Can artificial intelligence recognize sublimity?</p>
+        
+        <div class="base-moments">
+            <h2>Core Sublime Moments</h2>
+            <div class="moment">
+                <span class="poem-name">Intimations Ode by William Wordsworth:</span> "Our birth is but a sleep and a forgetting"
+            </div>
+            <div class="moment">
+                <span class="poem-name">To Autumn by John Keats:</span> "Then in a wailful choir the small gnats mourn / Among the river sallows, borne aloft / Or sinking as the light wind lives or dies"
+            </div>
+            <div class="moment">
+                <span class="poem-name">Kubla Khan by Samuel Taylor Coleridge:</span> "Through caverns measureless to man / Down to a sunless sea"
+            </div>
+        </div>
+        
+        <div class="additional-section">
+            <h2>Add Your Own Phrases (Optional - Max 3)</h2>
+            <p class="instructions">Add text to see if more language enhances or drowns AI's perspective on the sublime.</p>
+            
+            <input type="text" id="phrase1" class="phrase-input" placeholder="Enter first phrase...">
+            <input type="text" id="phrase2" class="phrase-input" placeholder="Enter second phrase...">
+            <input type="text" id="phrase3" class="phrase-input" placeholder="Enter third phrase...">
+        </div>
+        
+        <button id="generate-btn" onclick="generateImage()">Generate Sublime Visualization</button>
+        
+        <div id="loading" class="loading hidden">
+            <p>AI interpreting sublime moments...</p>
+        </div>
+        
+        <div id="result" class="result hidden">
+            <img id="generated-image" alt="AI's visualization of sublime">
+            <div class="analysis">
+                <p id="phrase-count"></p>
+                <p id="question">Does this capture the overwhelming feeling of the sublime, or has meaning drowned in its own abundance?</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
